@@ -1736,6 +1736,13 @@ ol {
     border-color: #f4952f;
 }
 
+.sidebar__social__links {
+    min-width: 18px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    max-width: 24px;
+}
+
 /*---------------------
     About Section
 -----------------------*/
@@ -2578,6 +2585,9 @@ ol {
 /*---------------------
   Contact
 -----------------------*/
+.contact__icon {
+    max-width: 32px;
+}
 
 .contact {
     padding-top: 0;

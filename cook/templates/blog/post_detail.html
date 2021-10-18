@@ -37,33 +37,33 @@
                     </div>
                     <div class="single-post__recipe__details">
                         {% for recipe in post.recipes.all %}
-                        <div class="single-post__recipe__details__option">
-                            <ul>
-                                <li>
-                                    <h5><i class="fa fa-user-o"></i> SERVES</h5>
-                                    <span>{{ recipe.serves }}</span>
-                                </li>
-                                <li>
-                                    <h5><i class="fa fa-clock-o"></i> PREP TIME</h5>
-                                    <span>{{ recipe.prep_time }}</span>
-                                </li>
-                                <li>
-                                    <h5><i class="fa fa-clock-o"></i> Cook TIME</h5>
-                                    <span>{{ recipe.cook_time }}</span>
-                                </li>
-                                <li><a href="#" class="primary-btn"><i class="fa fa-print"></i> Read more</a></li>
-                            </ul>
-                        </div>
+                            <div class="single-post__recipe__details__option">
+                                <ul>
+                                    <li>
+                                        <h5><i class="fa fa-user-o"></i> SERVES</h5>
+                                        <span>{{ recipe.serves }}</span>
+                                    </li>
+                                    <li>
+                                        <h5><i class="fa fa-clock-o"></i> PREP TIME</h5>
+                                        <span>{{ recipe.prep_time }}</span>
+                                    </li>
+                                    <li>
+                                        <h5><i class="fa fa-clock-o"></i> Cook TIME</h5>
+                                        <span>{{ recipe.cook_time }}</span>
+                                    </li>
+                                    <li><a href="#" class="primary-btn"><i class="fa fa-print"></i> Read more</a></li>
+                                </ul>
+                            </div>
 
-                        <div class="single-post__recipe__details__indegradients">
-                            <h5>Ingredients</h5>
-                            {{ recipe.ingredients|safe }}
-                        </div>
-                        <div class="single-post__recipe__details__direction">
-                            <h5>Directions</h5>
-                            {{ recipe.directions|safe }}
+                            <div class="single-post__recipe__details__indegradients">
+                                <h5>Ingredients</h5>
+                                {{ recipe.ingredients|safe }}
+                            </div>
+                            <div class="single-post__recipe__details__direction">
+                                <h5>Directions</h5>
+                                {{ recipe.directions|safe }}
 
-                        </div>
+                            </div>
                         {% endfor %}
                     </div>
                     <div class="single-post__middle__text">
@@ -96,20 +96,20 @@
                                     </div>
                                     <div class="single-post__previous__text">
                                         <span>Dinner</span>
-                                        <h5>The Best Weeknight Baked <br />Potatoes, 3 Creative Ways</h5>
+                                        <h5>The Best Weeknight Baked <br/>Potatoes, 3 Creative Ways</h5>
                                     </div>
                                 </a>
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-6">
                                 <a href="#" class="single-post__next">
-                                    <h6>Next posts <span class="arrow_carrot-right"></span> </h6>
+                                    <h6>Next posts <span class="arrow_carrot-right"></span></h6>
                                     <div class="single-post__next__meta">
                                         <h4>05</h4>
                                         <span>Aug</span>
                                     </div>
                                     <div class="single-post__next__text">
                                         <span>Smoothie</span>
-                                        <h5>The $8 French Rosé I Buy in <br />Bulk Every Summer</h5>
+                                        <h5>The $8 French Rosé I Buy in <br/>Bulk Every Summer</h5>
                                     </div>
                                 </a>
                             </div>
