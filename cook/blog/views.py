@@ -33,6 +33,7 @@ class PostDetailView(DetailView):
 class CreateComment(CreateView):
     model = Comment
     form_class = CommentForm
+
     # success_url = '/'
 
     def form_valid(self, form):

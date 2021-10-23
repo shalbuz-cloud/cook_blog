@@ -17,6 +17,11 @@ class Category(MPTTModel):
         blank=True
     )
 
+    def get_post_count(self):
+        """Количество постов в категории"""
+        ids = self.get_descendants(include_self=True).values_list('id')
+        return Post.objects.filter(category_id__in=ids).count()
+
     def __str__(self):
         return self.name
 

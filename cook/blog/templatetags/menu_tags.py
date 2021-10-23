@@ -1,7 +1,16 @@
+from ast import literal_eval
+
 from django import template
 from ..models import Category, Post
 
 register = template.Library()
+
+
+@register.simple_tag(takes_context=True)
+def get_list_category(context):
+    """Вывод всех категорий"""
+    category_list = Category.objects.all()
+    return category_list
 
 
 @register.inclusion_tag('blog/include/tags/top_menu.html')
